@@ -1,0 +1,194 @@
+@import url(/styles/variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    font-family: "Fira Sans",sans-serif;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+/* Header  */
+.header{
+    width: 100%;
+    height: 100px;
+}
+.wrapper{
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+.logo-link {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+.nav{
+    width: 100%;
+    max-width: 202px;
+    margin-right: 34px;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #00240F;
+}
+.active{
+    color: var(--red);
+}
+.social{
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.search-icon{
+    background-image: url(../assets/icons/search.svg);
+}
+.cart-icon{
+    background-image: url(../assets/icons/cart.svg);
+}
+.btn{
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: var(--red);
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero .wrapper{
+    min-height: 549px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, #FFFFFF 24.6%, rgba(255, 255, 255, 0.94) 37.11%, rgba(255, 255, 255, 0.9) 46.89%, rgba(255, 255, 255, 0) 82.49%) center, url(../assets/img/margherita-pizza\ 2.jpg) right no-repeat;
+    align-items: flex-start;
+    mix-blend-mode: normal;
+}
+.heading{
+    max-width: 579px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 74px;
+    color: var(--green);
+
+}
+.slogan{
+    max-width: 579px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
+    color: var(--green);
+    margin-bottom: 36px;
+}
+
+/* MENU */
+
+.menu .wrapper{
+    flex-direction: column;
+    
+}
+.title{
+    font-size: 36px;
+    line-height: 74px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.pizza-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pizza-item{
+    width: 100%;
+    max-width: 290px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #bdbdbd;
+    border-radius: 180px 180px 30px 30px;
+}
+.pizza-img{
+    margin-bottom: 21px;
+    border-radius: 50%;
+}
+.subtitle{
+    max-width: 258px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.description{
+    max-width: 258px;
+    margin-bottom: 21px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    text-align: center;
+}
+.price{
+    max-width: 258px;
+    margin-bottom: 21px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--light-green);
+}
+select{
+    width: 100%;
+    height: 40px;
+    padding: 9px 16px;
+    margin-bottom: 10px;
+    border: 1px solid #4f4f4f;
+    border-radius: 25px;
+    appearance: none;
+}
+.pizza-item .btn{
+    width: 100%;
+}
+
